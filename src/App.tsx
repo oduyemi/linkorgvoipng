@@ -8,6 +8,7 @@ import About from './pages/About';
 import Contact from './pages/Contact';
 import Faq from './pages/Faqs';
 import Error404 from './pages/Error404';
+import Login from './pages/Login';
 
 interface PrivateRouteProps {
   children: ReactNode;
@@ -54,6 +55,8 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/faq" element={<Faq />} />
+          <Route path="/login" element={<Login />} />
+
 
           {/* Admin Routes */}
           {/* 

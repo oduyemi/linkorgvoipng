@@ -4,7 +4,7 @@ import { Box, Heading, Text, Link, Image, Button, VStack, HStack } from "@chakra
 export const AboutSection: React.FC = () => {
     return (
         <Box
-            bg="#010156"
+            bg="white"
             py={{ base: "6", md: "12" }}
             px={{ base: "4", md: "8" }}
             borderRadius="lg"
@@ -26,7 +26,7 @@ export const AboutSection: React.FC = () => {
             <VStack spacing={{ base: "6", md: "8" }} align="center">
                 <Heading
                     as="h2"
-                    color="white"
+                    className="blutext"
                     fontSize={{ base: "2xl", md: "4xl" }}
                     textAlign="center"
                     fontWeight="bold"
@@ -36,7 +36,6 @@ export const AboutSection: React.FC = () => {
                     About LinkOrg Networks
                 </Heading>
                 <Text
-                    color="whiteAlpha.900"
                     fontSize={{ base: "md", md: "lg" }}
                     maxW="3xl"
                     textAlign="center"

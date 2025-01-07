@@ -3,7 +3,7 @@ import { Box, Heading, Input, Textarea, Button, VStack, FormControl, FormLabel, 
 
 export const ContactUs: React.FC = () => {
     return (
-        <Box className="contact_section layout_padding" py={{ base: 10, md: 16 }} bg="gray.200">
+        <Box className="contact_section layout_padding" py={{ base: 10, md: 16 }} bg="white">
             <Box className="container" maxW="container.md" px={4}>
                 <Box className="contact_main" textAlign="center">
                     <Heading as="h2" size="2xl" mb={6} className="blutext w-100">
