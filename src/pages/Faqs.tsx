@@ -4,6 +4,7 @@ import { Box } from "@chakra-ui/react";
 import { Footer } from "../components/Footer";
 import { ContactSection } from "../components/Home/Contact";
 import { More } from "../components/Home/More";
+import { VoipQuestions } from "../components/Faqs";
 
 
 
@@ -11,8 +12,7 @@ const Faq: React.FC = () => {
     return (
         <Box>
             <Banner />
-            <More />
-            <ContactSection />
+            <VoipQuestions />
             <Box>
                 <Footer />
             </Box>

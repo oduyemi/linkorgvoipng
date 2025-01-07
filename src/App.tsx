@@ -7,6 +7,7 @@ import Home from './pages/Homepage';
 import About from './pages/About';
 import Contact from './pages/Contact';
 import Faq from './pages/Faqs';
+import Error404 from './pages/Error404';
 
 interface PrivateRouteProps {
   children: ReactNode;
@@ -48,10 +49,12 @@ function App() {
         {!adminRoutes.includes(location.pathname) && <Navigation />}
         <ScrollToTop />
         <Routes>
+          <Route path="*" element={<Error404 />} />
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/faq" element={<Faq />} />
+
           {/* Admin Routes */}
           {/* 
           <Route path="/admin" element={<PrivateRoute><Admin /></PrivateRoute>} />
@@ -65,7 +68,7 @@ function App() {
           <Route path="/admin/sent-mails" element={<PrivateRoute><AdminSentMails /></PrivateRoute>} />
           */}
           {/* Fallback route */}
-          {/* <Route path="*" element={<Error404 />} /> */}
+          
         </Routes>
       </div>
     </ChakraProvider>
