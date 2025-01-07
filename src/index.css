@@ -1,0 +1,39 @@
+
+
+.navbar-collapse {
+  display: none; /* Hide by default */
+}
+
+.navbar-collapse.show {
+  display: block; /* Show when toggled */
+}
+
+
+.nav-link {
+  text-decoration: none;
+  color: #333;
+  padding: 8px 12px;
+  transition: color 0.3s;
+}
+
+.nav-link:hover {
+  color: #007bff;
+}
+
+
+.login_menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 10px;
+}
+
+.login_menu ul li img {
+  height: 24px;
+}
+
+
+.blutext{
+  color: #010156 !important;
+}
